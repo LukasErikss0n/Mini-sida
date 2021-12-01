@@ -10,7 +10,10 @@ html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
 }
-.center_item{
+body {
+  overflow-x: hidden;
+}
+.center_item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +68,6 @@ a {
 .nav-logo {
   font-size: 2.1rem;
   font-weight: 500;
-  color: #482ff7;
 }
 footer {
   height: 61px;
@@ -108,43 +110,171 @@ footer p {
   font-size: 40px;
 }
 
+.hero_imgage_home {
+  background-image: url("ekaterina-sazonova-CMhxw3lgZ7M-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.hero_imgage_h1 {
+  font-size: 78px;
+  background: linear-gradient(
+    156deg,
+    rgba(250, 255, 1, 1) 0%,
+    rgba(244, 171, 36, 1) 29%,
+    rgba(198, 41, 41, 1) 60%
+  );
+  margin-bottom: 1%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.nextmove_gradient {
+  background: linear-gradient(
+    156deg,
+    rgba(250, 255, 1, 1) 0%,
+    rgba(244, 171, 36, 1) 29%,
+    rgba(198, 41, 41, 1) 60%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.hero_imgage_p {
+  font-size: 20px;
+  margin-bottom: 5px;
+  background: linear-gradient(
+    156deg,
+    rgba(235, 250, 255, 1) 0%,
+    rgba(145, 188, 255, 1) 29%,
+    rgba(212, 254, 240, 1) 60%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 1%;
+}
+.hero_text_home {
+  flex: 100%;
+  text-align: center;
+  color: white;
+  height: 88%;
+  flex-direction: column;
+}
+.button_hero_home {
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid black;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #ecfc03;
+  color: #ecfc03;
+}
+.button_hero_home:hover {
+  background-color: #fffb0dda;
+  color: rgb(255, 255, 255);
+}
+
+.top_val_container {
+  background-color: #dedede;
+  height: 66vh;
+}
+.top_val_h2 {
+  padding-top: 15px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    156deg,
+    rgba(240, 244, 16, 1) 0%,
+    rgba(206, 183, 98, 1) 29%,
+    rgba(181, 137, 128, 1) 60%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.img_top_val {
+  width: 100%;
+  height: 32vh;
+  padding: 10px;
+}
+.button_top_val {
+  background-color: black;
+  padding: 5px;
+  color: white;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.card_top_val {
+  box-shadow: 0 4px 8px 0 rgba(31, 31, 31, 0.747);
+  max-width: 195px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 18px;
+  background-color: white;
+  width: 20vw;
+  margin-left: 10%;
+}
+.top_val_h3 {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.button_top_val:hover {
+  color: yellow;
+}
+
 @media only screen and (max-width: 768px) {
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
-    }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 8;
+  }
 
-    .nav-menu.active {
-        left: 0;
-    }
+  .nav-menu.active {
+    left: 0;
+  }
 
-    .nav-item {
-        margin: 2.5rem 0;
-    }
+  .nav-item {
+    margin: 2.5rem 0;
+  }
 
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
 
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
 
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .card_top_val {
+    max-width: 1000px;
+    margin: 0;
+    margin-left: 0px;
+    width: 69vw;
+    margin-bottom: 14%;
+  }
+  .row_top_val {
+    display: flex;
+    flex-direction: column;
+  }
+  .top_val_container {
+    height: 141vh;
+  }
 }
