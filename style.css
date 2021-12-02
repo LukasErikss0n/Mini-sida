@@ -69,6 +69,7 @@ a {
   font-size: 2.1rem;
   font-weight: 500;
 }
+/*Footer*/
 footer {
   height: 61px;
   background-color: rgb(250, 253, 255);
@@ -109,7 +110,7 @@ footer p {
 .fab:hover {
   font-size: 40px;
 }
-
+/*Home sida CSS */
 .hero_imgage_home {
   background-image: url("img/ekaterina-sazonova-CMhxw3lgZ7M-unsplash.jpg");
   background-position: center;
@@ -130,15 +131,13 @@ footer p {
     rgba(244, 171, 36, 1) 29%,
     rgba(198, 41, 41, 1) 60%
   );
-  
-}
-.gradient{
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+
 .hero_imgage_p {
   font-size: 20px;
-  margin-bottom: 5px;
+  text-shadow: -1px 1px 9px #bbbbbb;
   background: linear-gradient(
     156deg,
     rgba(235, 250, 255, 1) 0%,
@@ -180,15 +179,9 @@ footer p {
   padding-top: 15px;
   font-size: 30px;
   margin-bottom: 20px;
-  background: linear-gradient(
-    156deg,
-    rgba(240, 244, 16, 1) 0%,
-    rgba(206, 183, 98, 1) 29%,
-    rgba(181, 137, 128, 1) 60%
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  color: #e37b26;
 }
+
 .img_top_val {
   width: 100%;
   height: 32vh;
@@ -219,6 +212,42 @@ footer p {
 .button_top_val:hover {
   color: yellow;
 }
+/*SHOP sida CSS code*/
+
+.card_shop{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  margin: auto;
+  text-align: center;
+  float: left;
+  margin-left: 0%;
+  width: 24vw;
+}
+.price{
+  color: grey;
+  font-size: 22px;
+  margin-bottom: 11px;
+}
+.button_shop{
+  padding: 6px;
+  color: white;
+  background-color: #000;
+  width: 100%;
+}
+.button_shop:hover{
+  background-color: rgba(34, 34, 34, 0.452);
+}
+.img_shop{
+  width: 100%;
+  height: 36vh;
+}
+.container_shop{
+  height: 100vh;
+}
+.button_margin{
+  margin-bottom: 16px;
+}
+
 
 @media only screen and (max-width: 768px) {
   .nav-menu {
@@ -262,11 +291,11 @@ footer p {
     max-width: 1000px;
     margin: 0;
     margin-left: 0px;
-    width: 61vw;
+    width: 60vw;
     margin-bottom: 14%;
+    height: auto;
   }
   .row_top_val {
-    display: flex;
     flex-direction: column;
   }
   .top_val_container {
