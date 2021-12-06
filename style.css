@@ -112,7 +112,7 @@ footer p {
 }
 /*Home sida CSS */
 .hero_imgage_home {
-  background-image: url("img/ekaterina-sazonova-CMhxw3lgZ7M-unsplash.jpg");
+  background-image: url("img/samuel-ferrara-1527pjeb6jg-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -171,60 +171,23 @@ footer p {
   color: rgb(255, 255, 255);
 }
 
-.top_val_container {
-  background-color: white;
-  height: 66vh;
-}
 .top_val_h2 {
   padding-top: 15px;
   font-size: 30px;
   margin-bottom: 20px;
   color: #e37b26;
 }
-
-.img_top_val {
-  width: 100%;
-  height: 32vh;
-  padding: 10px;
-}
-.button_top_val {
-  background-color: black;
-  padding: 5px;
-  color: white;
-  margin-top: 5px;
-  font-size: 13px;
-}
-
-.card_top_val {
-  box-shadow: 0 4px 8px 0 rgba(31, 31, 31, 0.747);
-  max-width: 195px;
-  margin: auto;
-  text-align: center;
-  padding-bottom: 18px;
-  background-color: white;
-  width: 20vw;
-  margin-left: 10%;
-}
-.top_val_h3 {
-  margin-bottom: 10px;
-  font-size: 12px;
-}
-.button_top_val:hover {
-  color: yellow;
-}
 /*SHOP sida CSS code*/
 
 .card_shop {
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
   max-width: 250px;
   text-align: center;
   width: 500px;
 }
 .price {
   color: grey;
-  font-size: 22px;
+  font-size: 16px;
 }
-
 .product_info {
   display: flex;
   align-items: center;
@@ -233,11 +196,18 @@ footer p {
 .product_info h3{
   font-size: 15px;
 }
+
+.product_info h3:hover{
+  border-bottom: solid 3px #101010;
+}
 .card_shop img {
   width: 100%;
   height: 36vh;
   object-fit: cover;
   object-position: center;
+}
+.card_shop img:hover{
+  tittle
 }
 .container_shop {
   gap: 18px;
