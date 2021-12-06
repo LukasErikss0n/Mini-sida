@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Lato
-- Font Author: Copyright (c) 2010-2011 by tyPoland Lukasz Dziedzic (team@latofonts.com) with Reserved Font Name "Lato". Licensed under the SIL Open Font License, Version 1.1.
-- Font Source: http://fonts.gstatic.com/s/lato/v20/S6uyw4BMUTPHvxk6XweuBCY.ttf
+- Font Title: Lancelot
+- Font Author: Copyright (c) 2011 by Marion Kadi (marionkadi@gmail.com). All rights reserved. Licenced under SIL OFL v1.1
+- Font Source: http://fonts.gstatic.com/s/lancelot/v12/J7acnppxBGtQEulG4JY4xJ9CGyAa.ttf
 - Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
