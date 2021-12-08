@@ -116,6 +116,7 @@ footer p {
 /*Home sida CSS */
 .hero_imgage_home {
   background-image: url("img/samuel-ferrara-1527pjeb6jg-unsplash.jpg");
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -123,12 +124,12 @@ footer p {
   width: 100vw;
   height: 100vh;
 }
-.hero_imgage_h1 {
+.hero_text_home h1 {
   font-size: 78px;
   margin-bottom: 1%;
 }
 .nextmove_gradient {
-  background: linear-gradient(
+  /*background: linear-gradient(
     156deg,
     rgba(250, 255, 1, 1) 0%,
     rgba(244, 171, 36, 1) 29%,
@@ -136,9 +137,17 @@ footer p {
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  */
+  text-align: center;
+  background: linear-gradient(to right, rgb(238, 255, 0) 20%, #ff0 40%, rgb(241, 3, 3) 60%, rgb(255, 238, 0) 80%);
+  background-size: 200% auto;
+  color: rgb(0, 0, 0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
 }
 
-.hero_imgage_p {
+.hero_text_home p {
   font-size: 20px;
   text-shadow: -1px 1px 9px #bbbbbb;
   background: linear-gradient(
@@ -158,7 +167,7 @@ footer p {
   height: 88%;
   flex-direction: column;
 }
-.button_hero_home {
+.hero_text_home a {
   font-size: 20px;
   padding: 10px;
   border: 2px solid black;
@@ -169,7 +178,7 @@ footer p {
   border-color: #ecfc03;
   color: #ecfc03;
 }
-.button_hero_home:hover {
+.hero_text_home a:hover {
   background-color: #fffb0dda;
   color: rgb(255, 255, 255);
 }
@@ -178,7 +187,7 @@ footer p {
   padding-top: 15px;
   font-size: 30px;
   margin-bottom: 20px;
-  color: #e37b26;
+  color: rgb(25 149 177);
 }
 /*SHOP sida CSS code*/
 
@@ -187,7 +196,7 @@ footer p {
   text-align: center;
   width: 500px;
 }
-.price {
+.product_info p {
   color: grey;
   font-size: 16px;
 }
@@ -318,41 +327,47 @@ input[type="submit"]:hover {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.about_container{
+.about_container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 3%;
 }
-.about_container img{
+.about_container img {
   width: 32%;
+  height: 40vh;
   object-fit: cover;
   object-position: center;
-
 }
-.background_about_text{
+.background_about_text {
   background-color: #eaeaea59;
   width: 24vw;
 }
-.background_about_text h2{
+.background_about_text h2 {
   font-size: 20px;
   color: #000000;
   padding: 5px;
   margin-left: 9px;
 }
-.background_about_text p{
+.background_about_text p {
   font-size: 10px;
   width: 20vw;
   padding: 10px;
-  color:black;
+  color: black;
   margin-left: 9px;
 }
-.about_us h1{
+.about_us h1 {
   font-size: 24px;
   display: flex;
   justify-content: center;
   margin-top: 3%;
 }
-
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+}
 @media only screen and (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -407,20 +422,20 @@ input[type="submit"]:hover {
   .cart_info p {
     display: none;
   }
-  .about_container img{
+  .about_container img {
     width: 100%;
     height: 23vh;
   }
-  .about_container{
-    flex-direction: column;
-  }
-  .background_about_text{
+  .background_about_text {
     width: 100%;
   }
-  .background_about_text p{
+  .background_about_text p {
     width: 100%;
   }
-  .invisble{
+  .invisble {
     display: none;
+  }
+  .about_container_reverse {
+    flex-wrap: wrap-reverse;
   }
 }
