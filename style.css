@@ -12,8 +12,9 @@ html {
 }
 body {
   overflow-x: hidden;
+  background-color: #e3e7eb;
 }
-.center_item {
+.center-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,14 +25,13 @@ li {
 a {
   text-decoration: none;
 }
-.header {
-  border-bottom: 1px solid #e2e8f0;
-}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  background-color: #353535;
 }
 .hamburger {
   display: none;
@@ -43,7 +43,7 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
+  background-color: #b5b5b5;
 }
 .nav-menu {
   display: flex;
@@ -58,24 +58,25 @@ a {
 .nav-link {
   font-size: 1.6rem;
   font-weight: 400;
-  color: #000000a1;
+  color: #b5b2b2;
 }
 
 .nav-link:hover {
-  color: #482ff7;
+  color: #ffff;
 }
 
 .nav-logo {
   font-size: 2.1rem;
   font-weight: 500;
 }
-.side_show {
-  color: black;
+.side-show {
+  color: #ececec;
 }
 /*Footer*/
 footer {
   height: 61px;
-  background-color: rgb(250, 253, 255);
+  background-color: rgb(209 209 209);
+  margin-top: 20px;
 }
 
 footer p {
@@ -114,9 +115,8 @@ footer p {
   font-size: 40px;
 }
 /*Home sida CSS */
-.hero_imgage_home {
+.hero-imgage-home {
   background-image: url("img/samuel-ferrara-1527pjeb6jg-unsplash.jpg");
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -124,20 +124,11 @@ footer p {
   width: 100vw;
   height: 100vh;
 }
-.hero_text_home h1 {
+.hero-text-home h1 {
   font-size: 78px;
   margin-bottom: 1%;
 }
-.nextmove_gradient {
-  /*background: linear-gradient(
-    156deg,
-    rgba(250, 255, 1, 1) 0%,
-    rgba(244, 171, 36, 1) 29%,
-    rgba(198, 41, 41, 1) 60%
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  */
+.nextmove-gradient {
   text-align: center;
   background: linear-gradient(to right, rgb(238, 255, 0) 20%, #ff0 40%, rgb(241, 3, 3) 60%, rgb(255, 238, 0) 80%);
   background-size: 200% auto;
@@ -147,7 +138,7 @@ footer p {
   animation: shine 4s linear infinite;
 }
 
-.hero_text_home p {
+.hero-text-home p {
   font-size: 20px;
   text-shadow: -1px 1px 9px #bbbbbb;
   background: linear-gradient(
@@ -160,14 +151,14 @@ footer p {
   -webkit-background-clip: text;
   margin-bottom: 1%;
 }
-.hero_text_home {
+.hero-text-home {
   flex: 100%;
   text-align: center;
   color: white;
   height: 88%;
   flex-direction: column;
 }
-.hero_text_home a {
+.hero-text-home a {
   font-size: 20px;
   padding: 10px;
   border: 2px solid black;
@@ -178,12 +169,12 @@ footer p {
   border-color: #ecfc03;
   color: #ecfc03;
 }
-.hero_text_home a:hover {
+.hero-text-home a:hover {
   background-color: #fffb0dda;
   color: rgb(255, 255, 255);
 }
 
-.top_val_h2 {
+.top-val-h2 {
   padding-top: 15px;
   font-size: 30px;
   margin-bottom: 20px;
@@ -191,33 +182,35 @@ footer p {
 }
 /*SHOP sida CSS code*/
 
-.card_shop {
+.card-shop {
   max-width: 250px;
   text-align: center;
   width: 500px;
+  margin-top: 10px;
 }
-.product_info p {
+
+.product-info p {
   color: grey;
   font-size: 16px;
 }
-.product_info {
+.product-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.product_info h3 {
+.product-info h3 {
   font-size: 15px;
 }
-.product_info h3:hover {
+.product-info h3:hover {
   border-bottom: solid 1px #00000044;
 }
-.card_shop img {
+.card-shop img {
   width: 100%;
   height: 36vh;
   object-fit: cover;
   object-position: center;
 }
-.container_shop {
+.container-shop {
   gap: 18px;
   flex-wrap: wrap;
   display: flex;
@@ -226,14 +219,14 @@ footer p {
 }
 /*shoping cart*/
 
-.cart_page {
+.cart-page {
   margin: 80px;
 }
 table {
   width: 100%;
   border-collapse: collapse;
 }
-.cart_info {
+.cart-info {
   display: flex;
   flex-wrap: wrap;
 }
@@ -263,11 +256,11 @@ td img {
   object-fit: cover;
   object-position: center;
 }
-.total_price {
+.total-price {
   display: flex;
   justify-content: flex-end;
 }
-.total_price table {
+.total-price table {
   border-top: 3px solid #ff523b;
   width: 100%;
   max-width: 400px;
@@ -294,7 +287,7 @@ textarea {
 }
 input[type="submit"] {
   background-color: #000000;
-  color: white;
+  color: #b5b2b2;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -302,61 +295,57 @@ input[type="submit"] {
 }
 label {
   font-size: 20px;
+  color: #b5b2b2;
 }
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: rgb(238, 255, 0);
+  
 }
-.contact_us_container {
-  background-color: #efefef;
+
+.contact-us-container {
+  background-color: #353535;
   padding: 20px;
   margin-top: 3%;
 }
-.contact_us_container h2 {
+.contact-us-container h2 {
   margin-bottom: 15px;
   font-size: 29px;
   font-weight: normal;
   width: 38vw;
 }
-.gradient_contact {
-  background: linear-gradient(
-    156deg,
-    rgba(240, 244, 16, 1) 0%,
-    rgba(244, 22, 22, 1) 29%,
-    rgba(125, 31, 11, 1) 60%
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+.contact-us-container h2{
+  color: #f0f3ff;
 }
-.about_container {
+.about-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 3%;
 }
-.about_container img {
+.about-container img {
   width: 32%;
   height: 40vh;
   object-fit: cover;
   object-position: center;
 }
-.background_about_text {
+.background-about-text {
   background-color: #eaeaea59;
   width: 24vw;
 }
-.background_about_text h2 {
+.background-about-text h2 {
   font-size: 20px;
   color: #000000;
   padding: 5px;
   margin-left: 9px;
 }
-.background_about_text p {
+.background-about-text p {
   font-size: 10px;
   width: 20vw;
   padding: 10px;
   color: black;
   margin-left: 9px;
 }
-.about_us h1 {
+.about-us h1 {
   font-size: 24px;
   display: flex;
   justify-content: center;
@@ -367,19 +356,20 @@ input[type="submit"]:hover {
     background-position: 200% center;
   }
 }
-}
+
 @media only screen and (max-width: 768px) {
   .nav-menu {
     position: fixed;
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #353535;
     width: 100%;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     z-index: 8;
+    position: absolute;
   }
 
   .nav-menu.active {
@@ -405,7 +395,7 @@ input[type="submit"]:hover {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  .card_top_val {
+  .card-top-val {
     max-width: 1000px;
     margin: 0;
     margin-left: 0px;
@@ -413,29 +403,29 @@ input[type="submit"]:hover {
     margin-bottom: 14%;
     height: auto;
   }
-  .row_top_val {
+  .row-top-val {
     flex-direction: column;
   }
-  .top_val_container {
+  .top-val-container {
     height: 155vh;
   }
-  .cart_info p {
+  .cart-info p {
     display: none;
   }
-  .about_container img {
+  .about-container img {
     width: 100%;
     height: 23vh;
   }
-  .background_about_text {
+  .background-about-text {
     width: 100%;
   }
-  .background_about_text p {
+  .background-about-text p {
     width: 100%;
   }
   .invisble {
     display: none;
   }
-  .about_container_reverse {
+  .about-container-reverse {
     flex-wrap: wrap-reverse;
   }
 }
