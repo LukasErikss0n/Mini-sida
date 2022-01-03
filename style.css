@@ -72,48 +72,77 @@ a {
 .side-show {
   color: #ececec;
 }
-/*Footer*/
-footer {
-  height: 61px;
-  background-color: rgb(209 209 209);
-  margin-top: 20px;
+/*Footer, har tagit main koden av footern från nättet, har sedan anpassat den så att jag kan all kod som sker och ändrat koden och tagit bort koden till mitt behov*/ 
+.footer-clean {
+  color:#4b4c4d;
+}
+.colum-container {
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 20px;
+
+}
+.footer-clean h3 {
+  margin-top:10px;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
 }
 
-footer p {
-  background-color: gray;
-  padding: 5px;
-  color: aliceblue;
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
 }
 
-.fa-instagram {
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
 }
-.fa-twitter {
-  background-color: #1da1f2;
+
+.footer-clean ul a:hover {
+  opacity:1;
 }
-.fa-facebook {
-  background-color: #310fcf;
+
+.footer-clean .item.social {
+  text-align:right;
 }
-.fa-youtube {
-  background-color: tomato;
-  font-size: 30px;
+
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
 }
-.fab {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-left: 10px;
-  font-size: 30px;
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
 }
-.fab:hover {
-  font-size: 40px;
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
 }
+
+
+
+
+
+
+
 /*Home sida CSS */
 .hero-imgage-home {
   background-image: url("img/samuel-ferrara-1527pjeb6jg-unsplash.jpg");
@@ -179,7 +208,6 @@ footer p {
   font-size: 30px;
   margin-bottom: 20px;
   color: rgb(25 149 177);
-  text-shadow: 1px 1px 2px #efefef, 0 0 25px #ffffff, 0 0 5px #6b6b6b;
 }
 /*SHOP sida CSS code*/
 
@@ -360,6 +388,11 @@ input[type="submit"]:hover {
     background-position: 200% center;
   }
 }
+@media (max-width:1025px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .nav-menu {
@@ -374,6 +407,9 @@ input[type="submit"]:hover {
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     z-index: 8;
     position: absolute;
+  }
+  .footer-clean .item.social {
+    text-align:center;
   }
 
   .nav-menu.active {
@@ -431,5 +467,10 @@ input[type="submit"]:hover {
   }
   .about-container-reverse {
     flex-wrap: wrap-reverse;
+  }
+}
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
   }
 }
