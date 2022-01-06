@@ -78,6 +78,8 @@ a {
   background-color: #424242;
   padding-top: 5px ;
   padding-bottom: 5px;
+}
+.footer-clean-margin{
   margin-top: 40px;
 }
 .colum-container {
@@ -198,6 +200,7 @@ a {
 .hero-text-home a:hover {
   background-color: #fffb0dda;
   color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 .top-val-h2 {
@@ -364,7 +367,7 @@ input[type="submit"]:hover {
 }
 .background-about-text h2 {
   font-size: 20px;
-  color: #000000;
+  color: #4c5b5e;
   padding: 5px;
   margin-left: 9px;
 }
@@ -380,6 +383,8 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: center;
   margin-top: 3%;
+  font-weight: 500;
+  color: #4c5b5e;
 }
 
 @keyframes shine {
