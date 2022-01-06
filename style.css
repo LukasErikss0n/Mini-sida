@@ -74,7 +74,11 @@ a {
 }
 /*Footer, har tagit main koden av footern från nättet, har sedan anpassat den så att jag kan all kod som sker och ändrat koden och tagit bort koden till mitt behov*/ 
 .footer-clean {
-  color:#4b4c4d;
+  color:#dadada;
+  background-color: #424242;
+  padding-top: 5px ;
+  padding-bottom: 5px;
+  margin-top: 40px;
 }
 .colum-container {
   justify-content: center;
@@ -136,13 +140,6 @@ a {
   font-size:13px;
   opacity:0.6;
 }
-
-
-
-
-
-
-
 /*Home sida CSS */
 .hero-imgage-home {
   background-image: url("img/samuel-ferrara-1527pjeb6jg-unsplash.jpg");
@@ -238,6 +235,7 @@ a {
   height: 36vh;
   object-fit: cover;
   object-position: center;
+  background-color: #adaaaa; /* finns för att man ska se produkts korten även när sidan laddas in*/
 }
 .card-shop img:hover{
   opacity: 0.5;
@@ -383,6 +381,7 @@ input[type="submit"]:hover {
   justify-content: center;
   margin-top: 3%;
 }
+
 @keyframes shine {
   to {
     background-position: 200% center;
