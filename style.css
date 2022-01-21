@@ -385,6 +385,44 @@ input[type="submit"]:hover {
   font-weight: 500;
   color: #4c5b5e;
 }
+.space-work-card{
+  margin-top: 5vh;
+}
+.about-card{
+  max-width: 250px;
+  text-align: center;
+  width: 500px;
+  margin-top: 10px;
+  background-color: white;
+  box-shadow: 0 0 2px 0px #bdbdbd;
+}
+.about-card h2{
+  padding-top: 10px;
+}
+.work-possition{
+  float: left;
+  margin-left: 24px;
+}
+.work-mail{
+  color: #47525d;
+  font-size: 10px;
+}
+.work-text{
+  float: left;
+  margin-left: 24px;
+  max-width: 190px;
+  font-size: 9px;
+
+
+}
+.about-card img{
+  object-fit: cover;
+  object-position: center;
+  height: 250px;
+  width: 200px;
+}
+
+
 
 @keyframes shine {
   to {
