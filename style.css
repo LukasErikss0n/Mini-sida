@@ -395,6 +395,10 @@ input[type="submit"]:hover {
   margin-top: 10px;
   background-color: white;
   box-shadow: 0 0 2px 0px #bdbdbd;
+  height: 407px;
+}
+.space-cards{
+  margin-left: 2rem;
 }
 .about-card h2{
   padding-top: 10px;
@@ -412,8 +416,6 @@ input[type="submit"]:hover {
   margin-left: 24px;
   max-width: 190px;
   font-size: 9px;
-
-
 }
 .about-card img{
   object-fit: cover;
@@ -421,7 +423,6 @@ input[type="submit"]:hover {
   height: 250px;
   width: 200px;
 }
-
 
 
 @keyframes shine {
@@ -502,6 +503,7 @@ input[type="submit"]:hover {
   }
   .background-about-text p {
     width: 100%;
+    font-size: 14px;
   }
   .invisble {
     display: none;
